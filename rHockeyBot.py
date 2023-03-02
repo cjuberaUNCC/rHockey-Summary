@@ -11,7 +11,7 @@ reddit = praw.Reddit(client_id=auth.reddit_clientId,
                      user_agent='rHockeyBot by Charlie v1.0')
 
 
-subbreddit = reddit.subreddit('charliestestreddit')
+subbreddit = reddit.subreddit('hockey')
 
 for comment in subbreddit.stream.comments(skip_existing=True):
     if hasattr(comment, "body"):
